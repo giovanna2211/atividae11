@@ -2,15 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
 :root{
-    --main-background: #450a0a;
+    --main-background: #14b8a6;
     --text-color: #e2e8f0;
+    --nav: #5eead4;
+    --a: #042f2e;
+    --a-hover: #f0fdfa;
 
 }
 
 body{
     background-color: var(--main-background);
     color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100svh;
+    display: flex;
+    gap: 20px 5px;
+}
+
+nav{
+    background-color: var(--nav);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--a);
+    font-weight: 700;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--a-hover);
+    text-decoration: underline;
+}
+
+ul, li{
+    list-style: none;
 }
